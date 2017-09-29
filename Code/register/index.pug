@@ -1,0 +1,48 @@
+div.phone-wrapper
+	div.titlebar
+		div.btn-left.fa.fa-arrow-left
+		div.header Payment Options
+	
+	div.glide
+		div.glide__wrapper
+			ul.glide__track
+				li(data-slide-number='1').glide__slide
+					div.card
+						div.digits-container
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.last-digits 1234
+						div.card__info
+							span.fa.fa-cc-mastercard.card-type
+							span.card-expiration 10/17
+							
+				li(data-slide-number='2').glide__slide
+					div.card
+						div.digits-container
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.last-digits 0000
+						div.card__info
+							span.fa.fa-cc-visa.card-type
+							span.card-expiration 08/19
+						
+				li(data-slide-number='3').glide__slide
+					div.card
+						div.digits-container
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.hidden-digits &bull;&bull;&bull;&bull;
+							span.last-digits 7890
+						div.card__info
+							span.fa.fa-cc-paypal.card-type
+							span.card-expiration 01/22
+							
+		div.glide__bullets
+
+	div.container
+		div.card-details
+			h3(data-target="card-name").header
+			p(data-target="card-desc")
+		button.pay-btn Checkout

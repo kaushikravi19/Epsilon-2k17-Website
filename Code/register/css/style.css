@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+  height: 100%;
+  overflow: hidden;
+}
+
+body, a, h1, h2, h3, p, span, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #e6efbf;
+  background: -moz-linear-gradient(-45deg, #e6efbf 0%, #a3dec9 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #e6efbf), color-stop(100%, #a3dec9));
+  background: -webkit-linear-gradient(-45deg, #e6efbf 0%, #a3dec9 100%);
+  background: -o-linear-gradient(-45deg, #e6efbf 0%, #a3dec9 100%);
+  background: -ms-linear-gradient(-45deg, #e6efbf 0%, #a3dec9 100%);
+  background: linear-gradient(135deg, #e6efbf 0%, #a3dec9 100%);
+  font-size: 14px;
+}
+
+.phone-wrapper {
+  background: #eee;
+  border-style: solid;
+  border-color: #222831;
+  border-width: 50px 15px 50px 15px;
+  border-radius: 20px;
+  height: 620px;
+  margin: 50px auto;
+  overflow: hidden;
+  width: 350px;
+}
+
+.glide {
+  height: auto;
+}
+
+.glide__bullets {
+  pointer-events: none;
+  position: relative;
+}
+
+.glide__track {
+  margin-top: 10px;
+}
+
+.glide__slide {
+  padding: 20px 0;
+}
+.glide__slide .card {
+  background: #fff;
+  border: #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px transparent;
+  height: 300px;
+  margin: 5px 10px;
+  opacity: .7;
+  padding: 10px 15px;
+  position: relative;
+  transition: all .1s linear;
+}
+.glide__slide.active .card {
+  box-shadow: 0 5px 15px rgba(50, 50, 50, 0.2);
+  height: 310px;
+  margin: 0px 10px;
+  opacity: 1;
+}
+.glide__slide .digits-container {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.glide__slide .hidden-digits {
+  color: #878787;
+  margin: 0 10px;
+  opacity: .7;
+}
+.glide__slide .hidden-digits:first-of-type {
+  margin-left: 0;
+}
+.glide__slide .last-digits {
+  color: #333;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.glide__slide .card-type {
+  bottom: 10px;
+  color: #878787;
+  font-size: 30px;
+  opacity: .2;
+  position: absolute;
+  right: 15px;
+}
+.glide__slide .card-expiration {
+  bottom: 18px;
+  left: 15px;
+  opacity: .3;
+  position: absolute;
+}
+
+.container {
+  padding: 10px;
+}
+
+.card-details {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+}
+.card-details .header {
+  color: #878787;
+  font-size: 13px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+.titlebar {
+  background: #4ac3be;
+  box-shadow: 0 2px 4px rgba(50, 50, 50, 0.1);
+  color: #fff;
+  overflow: auto;
+}
+.titlebar .btn-left {
+  cursor: pointer;
+  float: left;
+  height: 46px;
+  opacity: 1;
+  padding: 15px 0;
+  text-align: center;
+  transition: all .1s linear;
+  width: 46px;
+}
+.titlebar .btn-left:hover {
+  background: rgba(68, 170, 204, 0.5);
+  opacity: .9;
+}
+.titlebar .header {
+  float: left;
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+  width: calc(100% - 92px);
+}
+
+.pay-btn {
+  background: #4ac;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 0px;
+  outline: none;
+  padding: 15px;
+  transition: all .1s linear;
+  width: 100%;
+}
+.pay-btn:hover {
+  background: #39b;
+}
+.pay-btn:disabled {
+  background: #aaa;
+  opacity: .5;
+  pointer-events: none;
+}
